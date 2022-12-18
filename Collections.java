@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Collections {
+public class Main {
 
 	public static void main(String[] args)
 	{
@@ -45,6 +45,26 @@ public class Collections {
 		u.add(30);
 		u.add(50);
 		System.out.print(u+ " ");
+		System.out.println();
+
+		// Set 
+		// Sets are dynamic in size
+		// Sets are dynamic in type 
+
+		Set h = new HashSet();
+		h.add("Haris");
+		h.add(10);
+		System.out.print(h+" ");
+		System.out.println();
+
+		// TreeSet 
+		// TreeSets are dynamic in size
+		// TreeSets are static in type 
+
+		TreeSet<String> l = new TreeSet<String>();  
+		l.add("Ali");  
+		l.add("Muzzamil");  
+		System.out.print(l+ " ");
 		System.out.println();
 
 		// Stacks 
