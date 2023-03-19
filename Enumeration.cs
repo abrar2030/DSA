@@ -6,7 +6,7 @@
             static void Main(string[] args)
             {
 
-            int[] numbers = { 1, 2, 3, 4, 5 };
+        int[] numbers = { 1, 2, 3, 4, 5 };
         IEnumerator enumerator = numbers.GetEnumerator();
 
         while (enumerator.MoveNext())
@@ -20,6 +20,18 @@
         while (enumerator.MoveNext())
         {
             Console.WriteLine(enumerator.Current);
+        }
+        
+        ArrayList myList = new ArrayList();
+        myList.Add("apple");
+        myList.Add("banana");
+        myList.Add("cherry");
+
+        IEnumerator myEnumerator = myList.GetEnumerator();
+        while (myEnumerator.MoveNext())
+        {
+            string element = (string)myEnumerator.Current;
+            Console.WriteLine(element);
         }
 
         LinkedList<int> list = new LinkedList<int>();
