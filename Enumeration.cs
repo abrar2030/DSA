@@ -11,8 +11,7 @@
 
     while (enumerator.MoveNext())
     {
-        int number = (int)enumerator.Current;
-        Console.WriteLine(number);
+        Console.WriteLine(enumerator.Current);
     }
 
     List<string> fruits = new List<string> { "apple", "banana", "cherry" };
@@ -20,8 +19,7 @@
 
     while (enumerator.MoveNext())
     {
-        string fruit = enumerator.Current;
-        Console.WriteLine(fruit);
+        Console.WriteLine(enumerator.Current);
     }
 
     LinkedList<int> list = new LinkedList<int>();
@@ -32,8 +30,7 @@
     IEnumerator<int> enumerator = list.GetEnumerator();
     while (enumerator.MoveNext())
     {
-        int number = enumerator.Current;
-        Console.WriteLine(number);
+       Console.WriteLine(enumerator.Current);
     }
 
     Queue<int> queue = new Queue<int>();
@@ -44,8 +41,7 @@
     IEnumerator enumerator = queue.GetEnumerator();
     while (enumerator.MoveNext())
     {
-        int number = (int)enumerator.Current;
-        Console.WriteLine(number);
+      Console.WriteLine(enumerator.Current);
     }
 
     Stack<int> stack = new Stack<int>();
@@ -56,8 +52,7 @@
     IEnumerator enumerator = stack.GetEnumerator();
     while (enumerator.MoveNext())
     {
-        int number = (int)enumerator.Current;
-        Console.WriteLine(number);
+       Console.WriteLine(enumerator.Current);
     }
 
     Dictionary<string, int> ages = new Dictionary<string, int>
@@ -81,8 +76,7 @@
 
     while (enumerator.MoveNext())
     {
-        string item = enumerator.Current;
-        Console.WriteLine(item);
+       Console.WriteLine(enumerator.Current);
     }
 
         }
