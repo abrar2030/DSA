@@ -71,6 +71,20 @@
         Console.WriteLine($"{name} is {age} years old");
     }
 
+
+        Hashtable hashtable = new Hashtable();
+        hashtable.Add("apple", 5);
+        hashtable.Add("banana", 2);
+        hashtable.Add("orange", 3);
+        
+        IEnumerator enumerator = hashtable.GetEnumerator();
+        while (enumerator.MoveNext())
+        {
+            HashtableEntry entry = (HashtableEntry)enumerator.Current;
+            Console.WriteLine("Key: {0}, Value: {1}", entry.Key, entry.Value);
+        }
+    
+
     HashSet<string> set = new HashSet<string> { "apple", "banana", "cherry" };
     IEnumerator<string> enumerator = set.GetEnumerator();
 
