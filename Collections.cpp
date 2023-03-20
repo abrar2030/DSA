@@ -16,15 +16,6 @@ l.push_back(6);                  // adding a new element to the end of the list
 l.push_front(0);                 // adding a new element to the front of the list
 cout << l.front() << " " << l.back();  // accessing the first and last elements of the list (output: 0 6)
 	
-queue<int> queue;
-queue.push(1);
-queue.push(2);
-queue.push(3);
-while (!queue.empty()) {
-int number = queue.front();
-queue.pop();
-cout << number << endl;
-	
 stack<string> stack;
 stack.push("Alice");
 stack.push("Bob");
@@ -33,6 +24,15 @@ while (!stack.empty()) {
 string name = stack.top();
 stack.pop();
 cout << name << endl;
+	
+queue<int> queue;
+queue.push(1);
+queue.push(2);
+queue.push(3);
+while (!queue.empty()) {
+int number = queue.front();
+queue.pop();
+cout << number << endl;
 
 set<int> s = {3, 1, 4, 1, 5, 9, 2};  // initializing a set of integers with 5 elements
 s.insert(6);                        // adding a new element to the set
