@@ -98,15 +98,16 @@ public class Main {
 		// Hashtables are dynamic in size
 		// Hashtables are dynamic in type 
 
-		Hashtable y = new Hashtable();
+		Hashtable<String, Integer> y = new Hashtable();
 		y.put("Abrar ", 22);
 		y.put("jahangeer ", 20);
 		System.out.println(y);
 
+		
 		// HashMap 
 		// HashMap are dynamic in size
 		// HashMap are dynamic in type 
-		HashMap k = new HashMap();
+		HashMap<String, Integer> k = new HashMap();
 		k.put("Sami ", 26);
 		k.put("Zain ", 25);
 		System.out.println(k);
